@@ -1,0 +1,47 @@
+
+<html>
+
+    <style>
+        body
+        {
+            background-color:red;
+        }
+        h1
+        {
+            color:yellow;
+            text-align:center;
+            text-align: center
+        }
+        p
+        {
+        	color: red;
+            font-family:"Times New Roman";
+            font-size:20px;
+            text-align: center
+        }
+        form
+        {
+        	color:red;
+        	text-align: center
+        }
+    </style>
+
+    <head>
+        <script>
+            function converter()
+            {
+                mpg = Number(document.con.mpg.value);
+                alert(""+mpg+" MPG is equal to " + (1.609 * mpg)/3.785+"KPL");
+            }
+        </script>
+    </head>
+    <body>
+    <body background="CarCat.jpg"> 
+        <p> Enter mpg and get kpl</p>
+        <form name="con">
+            Miles per Gallon: <input type="number" name="mpg"><br>
+            <input type="button" onClick = converter() value="Convert!">
+        </form>
+
+    </body>
+</html>
